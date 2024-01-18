@@ -14,9 +14,10 @@ export default function Header() {
   const pathName = usePathname();
 
   return (
-    <>
-      <header className='w-full z-10'>
-        <nav className="max-w-[1440px] mx-auto flex gap-5 sm:px-16 px-6 py-4">
+    <header className='bg-blue-500 text-white py-4'>
+      <div className="container mx-auto flex justify-between items-center">
+        <h1 className="text-3xl font-semibold">Miguel</h1>
+        <nav className="space-x-4 flex">
           {headerLinks.map((link) => {
             return (
               <Link
@@ -29,7 +30,7 @@ export default function Header() {
             );
           })}
         </nav>
-      </header>
-    </>
+      </div>
+    </header>
   )
 }
