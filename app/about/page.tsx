@@ -1,10 +1,10 @@
 export default function About() {
 	return (
-		<section className="flex flex-col md:flex-row items-center mb-8">
-			<div className='flex min-h-screen flex-col items-center p-24 md:w-2/3 mx-auto text-center'>
+		<section className="flex flex-col md:flex-row mb-8">
+			<div className='flex min-h-screen flex-col p-24 md:w-2/3 mx-auto text-left'>
 				<h2 className="text-3xl font-semibold mb-4">Passionate Programmer and Problem Solver</h2>
 				<p className="text-gray-700 mb-4">Hello there! I'm Miguel, a 23-year-old tech enthusiast on the brink of graduating with a System Information degree. Currently, I thrive as a dedicated programmer in the IT department of a prominent coffee exporting company.</p>
-				<h3 className="text-left">Professional Journey:</h3>
+				<h3>Professional Journey:</h3>
 				<p className="text-gray-700 mb-4">In the dynamic world of technology, I've found my niche, working diligently in the heart of a coffee export enterprise. Here, I've honed my programming skills, tackling complex challenges in the ever-evolving IT landscape.</p>
 				<h3>Tech Alchemist:</h3>
 				<p className="text-gray-700 mb-4">Programming isn't just a job for me; it's my passion. I revel in the intricacies of coding and delight in finding elegant solutions to problems. Being on the forefront of technological innovation is where I feel most at home.</p>
