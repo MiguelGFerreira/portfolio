@@ -32,4 +32,12 @@
 .custom-btn {
   @apply flex flex-row relative justify-center items-center py-3 px-6 outline-none;
 }
+
+html {
+  @apply h-full
+}
+
+body {
+  @apply flex flex-col min-h-full
+}
 /* END: General styles */

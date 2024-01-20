@@ -16,7 +16,9 @@ export default function Header() {
   return (
     <header className='bg-blue-500 text-white py-4'>
       <div className="container mx-auto flex justify-between items-center">
-        <h1 className="text-3xl font-semibold">Miguel</h1>
+        <Link href={'/'}>
+          <h1 className="text-3xl font-semibold">Miguel</h1>
+        </Link>
         <nav className="space-x-4 flex">
           {headerLinks.map((link) => {
             return (
@@ -25,7 +27,7 @@ export default function Header() {
                 href={link.href}
                 className={clsx('flex', 'hover:bg-sky-100 hover:text-blue-600', { 'bg-sky-100 text-blue-600': pathName === link.href })}
               >
-                <p className="md:block px-4 py-2">{link.name}</p>
+                <h4 className="md:block px-4 py-2">{link.name}</h4>
               </Link>
             );
           })}
