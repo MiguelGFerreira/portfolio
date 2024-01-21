@@ -1,6 +1,14 @@
+import Image from "next/image"
+
 export default function About() {
 	return (
-		<section className="flex flex-col md:flex-row mb-8">
+		<section className="flex flex-col md:flex-row mb-auto">
+			<Image
+				src="/image1.jpg"
+				alt="Picture of me"
+				width={800}
+				height={800}
+			/>
 			<div className='flex min-h-screen flex-col p-24 md:w-2/3 mx-auto text-left'>
 				<h2 className="text-3xl font-semibold mb-4">Passionate Programmer and Problem Solver</h2>
 				<p className="text-gray-700 mb-4">Hello there! I'm Miguel, a 23-year-old tech enthusiast on the brink of graduating with a System Information degree. Currently, I thrive as a dedicated programmer in the IT department of a prominent coffee exporting company.</p>
