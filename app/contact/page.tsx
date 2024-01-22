@@ -23,7 +23,7 @@ export default function About() {
       <p className="text-lg mb-4">
         If you are interested in working with me on a project or collaborating, please contact me.
       </p>
-      <p className="mb-4">Or send an e-mail to <a href="mailto:miguel.gfe@outlook.com" className="text-blue-500">miguel.gfe@outlook.com</a>.</p>
+      <p className="mb-4">Or send an e-mail to <a href="mailto:miguel.gfe@outlook.com" className="text-blue-500">miguel.gfe@outlook.com</a></p>
       <form
         onSubmit={handleSubmit}
         className="max-w-md mx-auto bg-white p-8 mt-8 rounded shadow-md"

@@ -1,0 +1,14 @@
+[
+	{
+		"id": "1",
+		"video": "Video path",
+		"title": "Title of the Project",
+		"content": "Text content of the project 1"
+	},
+	{
+		"id": "2",
+		"video": "Video path",
+		"title": "Title of the Project",
+		"content": "Text content of the project 2"
+	}
+]

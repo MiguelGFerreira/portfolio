@@ -7,14 +7,14 @@ const projects = [
     title: 'Project 1',
     description: 'Project 1 description',
     imageUrl: '/project-1.jpg',
-    link: '/projects/project1',
+    link: '/projects/1',
   },
   {
     id: 2,
     title: 'Project 2',
     description: 'Project 2 description',
     imageUrl: '/project-2.jpg',
-    link: '/projects/project2',
+    link: '/projects/2',
   },
 ];
 
