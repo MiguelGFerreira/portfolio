@@ -41,3 +41,19 @@ body {
   @apply flex flex-col min-h-full
 }
 /* END: General styles */
+
+.project-content {
+  margin-top: 2rem; /* You can adjust the margin as needed */
+}
+
+.project-features {
+  margin-top: 1.5rem; /* Adjust margin as needed */
+}
+
+.project-section-text p {
+  color: #4a5568; /* Adjust text color as needed */
+}
+
+.project-section-image img {
+  border-radius: 0.375rem; /* Adjust border-radius as needed */
+}

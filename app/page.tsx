@@ -1,24 +1,13 @@
-import Image from "next/image"
-import Link from "next/link"
+import Image from "next/image";
+import Link from "next/link";
+import { promises as fs } from "fs";
+import { Project } from "@/types";
 
-const projects = [
-  {
-    id: 1,
-    title: 'Project 1',
-    description: 'Project 1 description',
-    imageUrl: '/project-1.jpg',
-    link: '/projects/1',
-  },
-  {
-    id: 2,
-    title: 'Project 2',
-    description: 'Project 2 description',
-    imageUrl: '/project-2.jpg',
-    link: '/projects/2',
-  },
-];
+export default async function Home() {
+  const file = await fs.readFile("projects.json", "utf-8");
+  const projects = JSON.parse(file);
+  const reversedProjects = projects.slice().reverse();
 
-export default function Home() {
   return (
     <div className="container mx-auto text-center mt-8">
       <h2 className="text-3xl font-semibold mb-4">Welcome!</h2>
@@ -27,7 +16,7 @@ export default function Home() {
       </p>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-        {projects.map((project) => (
+        {reversedProjects.map((project: Project) => (
           <Link
             href={project.link}
             key={project.id}
@@ -36,7 +25,12 @@ export default function Home() {
             <h3 className="text-xl font-semibold mb-2">{project.title}</h3>
             <p className="text-gray-600">{project.description}</p>
             <div className="mt-4">
-              <Image src={project.imageUrl} alt={project.title} width={300} height={200} />
+              <Image
+                src={project.mainImage}
+                alt={project.title}
+                width={300}
+                height={200}
+              />
             </div>
           </Link>
         ))}

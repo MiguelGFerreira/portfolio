@@ -2,13 +2,61 @@
 	{
 		"id": "1",
 		"video": "Video path",
-		"title": "Title of the Project",
-		"content": "Text content of the project 1"
+		"title": "Next.js Dashboard",
+		"link": "/projects/1",
+		"githubLink": "https://github.com/MiguelGFerreira/nextjs-dashboard",
+		"mainImage": "/dashboard.png",
+		"description": "A dashboard application built with React and Next.js",
+		"sections": [
+			{
+				"type": "text",
+				"content": "This project is a Next.js dashboard that I developed as part of the Next.js documentation. The dashboard is built using Next.js, React, TypeScript, and Tailwind. The dashboard includes a public home page, a login page, dashboard pages, and invoice management."
+			},
+			{
+				"type": "image",
+				"src": "/project-1.jpg",
+				"alt": "Screenshot of the Next.js Dashboard"
+			},
+			{
+				"type": "text",
+				"content": "This project was a valuable learning experience for me. I learned how to use Next.js to build a complex web application. I also learned how to use React, TypeScript, and Tailwind to build a production-ready application."
+			}
+		],
+		"features": [
+			"A public home page",
+			"A login page",
+			"Dashboard pages",
+			"Invoice management"
+		]
 	},
 	{
 		"id": "2",
 		"video": "Video path",
 		"title": "Title of the Project",
-		"content": "Text content of the project 2"
+		"link": "/projects/2",
+		"githubLink": "",
+		"mainImage": "/project-2.jpg",
+		"description": "Project 2 description",
+		"sections": [
+			{
+				"type": "text",
+				"content": "This project is a Next.js dashboard that I developed as part of the Next.js documentation. The dashboard is built using Next.js, React, TypeScript, and Tailwind. The dashboard includes a public home page, a login page, dashboard pages, and invoice management."
+			},
+			{
+				"type": "image",
+				"src": "/project-1.jpg",
+				"alt": "Screenshot of the Next.js Dashboard"
+			},
+			{
+				"type": "text",
+				"content": "This project was a valuable learning experience for me. I learned how to use Next.js to build a complex web application. I also learned how to use React, TypeScript, and Tailwind to build a production-ready application."
+			}
+		],
+		"features": [
+			"A public home page",
+			"A login page",
+			"Dashboard pages",
+			"Invoice management"
+		]
 	}
 ]
