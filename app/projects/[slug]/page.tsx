@@ -6,7 +6,7 @@ import { Project, Section } from "@/types";
 export default async function Page({ params }: { params: { slug: string } }) {
   const id = params.slug;
 
-  const file = await fs.readFile("projects.json", "utf-8");
+  const file = await fs.readFile("./public/projects.json", "utf-8");
   const data = JSON.parse(file);
 
   const item = data.find((item: Project) => item.id === id)

@@ -4,7 +4,7 @@ import { promises as fs } from "fs";
 import { Project } from "@/types";
 
 export default async function Home() {
-  const file = await fs.readFile("projects.json", "utf-8");
+  const file = await fs.readFile("./public/projects.json", "utf-8");
   const projects = JSON.parse(file);
   const reversedProjects = projects.slice().reverse();
 
