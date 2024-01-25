@@ -1,0 +1,9 @@
+{
+	"projects": [
+	  {
+		"name": "MeuProjeto",
+		"src": ".",
+		"customConfig": "projects.json"
+	  }
+	]
+  }

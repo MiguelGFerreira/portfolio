@@ -2,9 +2,11 @@ import Image from "next/image";
 import Link from "next/link";
 import { promises as fs } from "fs";
 import { Project } from "@/types";
+import path from "path";
 
 export default async function Home() {
-  const file = await fs.readFile("./public/projects.json", "utf-8");
+  const jsonPath = path.join(process.cwd(), 'public', 'projects.json');
+  const file = await fs.readFile(jsonPath, "utf-8");
   const projects = JSON.parse(file);
   const reversedProjects = projects.slice().reverse();
 

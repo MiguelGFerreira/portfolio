@@ -2,11 +2,13 @@ import Image from "next/image";
 import Link from "next/link";
 import { promises as fs } from "fs";
 import { Project, Section } from "@/types";
+import path from "path";
 
 export default async function Page({ params }: { params: { slug: string } }) {
   const id = params.slug;
 
-  const file = await fs.readFile("./public/projects.json", "utf-8");
+  const jsonPath = path.join(process.cwd(), 'public', 'projects.json');
+  const file = await fs.readFile(jsonPath, "utf-8");
   const data = JSON.parse(file);
 
   const item = data.find((item: Project) => item.id === id)

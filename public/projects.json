@@ -41,7 +41,7 @@
 		"link": "/projects/2",
 		"githubLink": "https://github.com/MiguelGFerreira/car_showcase",
 		"mainImage": "/car-showcase.png",
-		"description": "Project 2 description",
+		"description": "Stunning website for rental cars.",
 		"sections": [
 			{
 				"type": "text",
