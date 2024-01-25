@@ -4,7 +4,7 @@ export default function About() {
 	return (
 		<section className="flex flex-col md:flex-row mb-auto">
 			<Image
-				src="/image1.jpg"
+				src="/me.jpg"
 				alt="Picture of me"
 				width={800}
 				height={800}

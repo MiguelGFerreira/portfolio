@@ -40,20 +40,24 @@ html {
 body {
   @apply flex flex-col min-h-full
 }
+
+section {
+  @apply flex flex-col
+}
 /* END: General styles */
 
 .project-content {
-  margin-top: 2rem; /* You can adjust the margin as needed */
+  @apply flex flex-col text-left items-center justify-center
+}
+
+.project-section-text {
+  @apply py-8
+}
+
+.project-section-image {
+  @apply py-8 items-center justify-center max-w-lg
 }
 
 .project-features {
-  margin-top: 1.5rem; /* Adjust margin as needed */
-}
-
-.project-section-text p {
-  color: #4a5568; /* Adjust text color as needed */
-}
-
-.project-section-image img {
-  border-radius: 0.375rem; /* Adjust border-radius as needed */
+  @apply self-start
 }
