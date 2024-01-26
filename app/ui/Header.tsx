@@ -10,6 +10,8 @@ const headerLinks = [
   { name: 'Contact Me', href: '/contact' }
 ];
 
+
+
 export default function Header() {
   const pathName = usePathname();
 

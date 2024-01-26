@@ -26,7 +26,7 @@ export default async function Home() {
           >
             <h3 className="text-xl font-semibold mb-2">{project.title}</h3>
             <p className="text-gray-600">{project.description}</p>
-            <div className="mt-4">
+            <div className="mt-4 flex justify-center items-center">
               <Image
                 src={project.mainImage}
                 alt={project.title}
