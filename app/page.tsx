@@ -17,12 +17,12 @@ export default async function Home() {
         Hi! I'm Miguel, passionate about technology, programming, and problem-solving. Below are some of the projects I've been involved in
       </p>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
         {reversedProjects.map((project: Project) => (
           <Link
             href={project.link}
             key={project.id}
-            className="bg-white p-4 rounded-md shadow-md hover:shadow-lg transition duration-300 ease-in-out"
+            className="bg-white p-4 rounded-md shadow-md hover:shadow-lg transition duration-300 ease-in-out block"
           >
             <h3 className="text-xl font-semibold mb-2">{project.title}</h3>
             <p className="text-gray-600">{project.description}</p>
